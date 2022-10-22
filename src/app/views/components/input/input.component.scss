@@ -1,0 +1,133 @@
+.prueba {
+  max-width: 500px;
+  margin-left: 200px;
+  margin-top: 200px;
+}
+
+@import "../../../../assets/scss/variables";
+
+.app-input {
+  display: flex;
+  flex: 1 1 auto;
+  font-size: 1rem;
+  letter-spacing: normal;
+  max-width: 100%;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  transition: border 0.3s cubic-bezier(0.25, 0.8, 0.5, 1);
+  border-radius: 4px;
+  background:#242424;
+
+  .app-input-control {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    min-width: 0;
+    width: 100%;
+    border-radius: inherit;
+    color: currentColor;
+
+    .app-input-container {
+      padding: 0 12px;
+      min-height: 46px;
+      background: transparent;
+      align-items: center;
+      cursor: text;
+      display: flex;
+      position: relative;
+
+      fieldset {
+        color: $gray;
+        padding-left: 8px;
+        border-collapse: collapse;
+        border: 1px solid $gray;
+        bottom: 0;
+        left: 0;
+        pointer-events: none;
+        position: absolute;
+        right: 0;
+        top: -5px;
+        margin: 0;
+        transition-duration: 0.15s;
+        transition-property: color;
+        transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+        border-radius: 4px;
+
+        legend {
+          text-align: left;
+          line-height: 11px;
+          padding: 0;
+          transition: width 0.3s cubic-bezier(0.25, 0.8, 0.5, 1);
+          border: 0;
+          color: inherit;
+          display: table;
+          white-space: normal;
+          max-width: 100%;
+        }
+      }
+
+      .app-input-slot {
+        display: flex;
+        flex: 1 1 auto;
+        position: relative;
+
+        label {
+          left: 0px;
+          right: auto;
+          position: absolute;
+          top: 10px;
+          transform-origin: top left;
+          color: $gray;
+          height: 20px;
+          line-height: 20px;
+          letter-spacing: normal;
+          max-width: 90%;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          pointer-events: none;
+          font-size: 1rem;
+          min-height: 8px;
+          transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1);
+        }
+
+        input {
+          max-height: 32px;
+          flex: 1 1 auto;
+          line-height: 20px;
+          padding: 8px 0;
+          max-width: 100%;
+          min-width: 0;
+          width: 100%;
+          background-color: transparent;
+          border-style: none;
+          color: transparent;
+        }
+      }
+    }
+  }
+}
+
+.active {
+  color: #1867c0;
+  caret-color: #1867c0;
+
+  fieldset {
+    border: 2px solid $bistre_brown !important;
+  }
+
+  label {
+    transform: translateY(-22px) scale(.75);
+    background-color: #242424;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: $bistre_brown !important;
+  }
+
+  input {
+    color: #fff !important;
+  }
+}
