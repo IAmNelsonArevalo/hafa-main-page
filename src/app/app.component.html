@@ -1,1 +1,10 @@
-<app-button text="Clickeame!" [action]="isFunction"></app-button>
+<button (click)="openModal()">open Modal</button>
+
+<app-popup
+  id="loginModal"
+  title="Close modal"
+  [showModal]="showModal"
+  [closeModal]="closeModal"
+>
+  <span>Hola </span>
+</app-popup>
