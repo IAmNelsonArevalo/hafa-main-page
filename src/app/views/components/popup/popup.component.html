@@ -1,0 +1,11 @@
+<div class="popup" *ngIf="showModal">
+  <div class="card">
+    <div class="card-title">
+      <h3>{{ title }}</h3>
+      <div class="close-modal" (click)="closeModal()"></div>
+    </div>
+    <div class="card-body">
+      <ng-content></ng-content>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,57 @@
+@import "../../../../assets/scss/variables";
+
+.popup {
+  position: fixed;
+  width: 100vw;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+  top: 0%;
+
+  .card {
+    background: $dark_charcoal;
+    width: 700px;
+
+    @media (max-width: 767px) {
+      width: 80%;
+    }
+
+    .card-title {
+      padding: 10px;
+      margin: 0;
+      color: $white;
+      display: flex;
+      justify-content: space-between;
+
+      h3 {
+        font-family: "Rubik", sans-serif;
+      }
+
+      .close-modal {
+        background: $white;
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+        text-align: center;
+        border-radius: 100%;
+        cursor: pointer;
+
+        &::before {
+          content: "\f00d";
+          font-family: "FontAwesome";
+          font-size: 12px;
+          width: 100%;
+          display: inline-block;
+          vertical-align: top;
+          color: $raisin_black;
+        }
+      }
+    }
+
+    .card-body {
+      background: $raisin_black;
+    }
+  }
+}

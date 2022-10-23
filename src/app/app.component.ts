@@ -7,8 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'hafa-main-page';
+  showModal: boolean = false;
 
-  isFunction(): void {
-    console.log("Hola Hola");
+  openModal(): void {
+    this.showModal = true;
+  }
+
+  closeModal(): void {
+    this.showModal = false;
   }
 }
