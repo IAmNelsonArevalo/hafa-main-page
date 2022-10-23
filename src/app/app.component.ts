@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'hafa-main-page';
+
+  isFunction(): void {
+    console.log("Hola Hola");
+  }
 }

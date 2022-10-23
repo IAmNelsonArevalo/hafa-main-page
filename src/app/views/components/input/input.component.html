@@ -1,23 +1,23 @@
-<div class="prueba">
-  <div class="app-input {{isFocused ? 'active' : ''}}">
-    <div class="app-input-control">
-      <div class="app-input-container">
-        <fieldset aria-hidden="true">
-          <legend style="width: 0px"><span class="notranslate">​</span></legend>
-        </fieldset>
-        <div class="app-input-slot">
-          <label for="">{{label}}</label>
-          <input
-            type="{{type}}"
-            (focus)="setIsFocus()"
-            (blur)="setIsFocus()"
-            name="{{name}}"
-            ngModel
-            (ngModelChange)="showInput($event)"
-          >
-        </div>
+<div class="app-input {{ isFocused ? 'active' : '' }}">
+  <div class="app-input-control">
+    <div class="app-input-container">
+      <fieldset aria-hidden="true">
+        <legend style="width: 0px"><span class="notranslate">​</span></legend>
+      </fieldset>
+      <div class="app-input-slot">
+        <label for="">{{ label }}</label>
+        <input
+          type="{{ type }}"
+          (focus)="setIsFocus()"
+          (blur)="setIsFocus()"
+          name="{{ name }}"
+          ngModel
+          (ngModelChange)="showInput($event)"
+        />
       </div>
-      <span style="width: 100%; color: #fff;" *ngIf="type === 'password'">{{passwordText}}</span>
     </div>
+    <span style="width: 100%; color: #fff" *ngIf="type === 'password'">{{
+      passwordText
+    }}</span>
   </div>
 </div>
