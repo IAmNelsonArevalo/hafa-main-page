@@ -30,7 +30,7 @@ export class InputComponent implements OnInit {
    * @return {void}
    */
   setIsFocus(): void {
-    this.isFocused = !this.isFocused;
+    this.isFocused = true;
   }
 
   /**

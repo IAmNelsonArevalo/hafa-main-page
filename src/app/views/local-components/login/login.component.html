@@ -1,0 +1,28 @@
+<app-popup
+  [showModal]="showModal"
+  [closeModal]="closeModal"
+  title="Ingresa y revisa mas cerca nuestras promociones."
+>
+  <div class="col-md-12 d-flex justify-content-center">
+    <h3 class="text-white">Bienvenido otra vez!</h3>
+  </div>
+  <div class="row mt-3">
+    <div class="col-md-12">
+      <app-input
+        label="Ingresa tu correo electronico"
+        name="email"
+        type="email"
+      ></app-input>
+    </div>
+    <div class="col-md-12 mt-3">
+      <app-input
+        label="Ingresa tu contrasena"
+        name="password"
+        type="password"
+      ></app-input>
+    </div>
+    <div class="col-md-12 mt-3 d-flex justify-content-center">
+      <app-button text="Ingresar"></app-button>
+    </div>
+  </div>
+</app-popup>
