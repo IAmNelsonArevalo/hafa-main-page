@@ -1,22 +1,37 @@
-/** Colors */
+/** Fonts */
+$rubik: "Rubik", sans-serif;
+$prata: "Prata", serif;
+
+/** Color */
 // Grey
-$davys_grey: #5a5a5a !default;
-$onyx: #393939 !default;
+$davys_grey: #5a5a5a;
+$davys_grey_light: #56595e;
+$dark_chacoral: #2e2e2e;
+$dark_charcoal: #333333;
+$dark_charcoal_180: #2f2f2f;
+$jet: #343434;
+$onyx: #373b41;
 
 // Black
-$raisin_black: #242424 !default;
-$dark_charcoal: #333333 !default;
-$black-087: #000000de !default;
+$raisin_black: #242424;
+$black_700: rgba(0, 0, 0, 0.07);
+$black: #000000;
 
-// Brown
-$bistre_brown: #a8741a !default;
-
-// Red
-$electric_red: #F00000 !default;
+// Green
+$charleston_green: #2d2d2d;
 
 // White
-$white: #ffffff !default;
+$white: #ffffff;
+
+// Brown
+$bistre_brown: #a8741a;
+
+// Blue
+$celestial_blue: #509abd;
 
 // Gray
-$gray: #808080 !default;
-$spanish_gray: #999999 !default;
+$gray: #000000;
+$granite_gray: #616161;
+
+// Silver
+$sonic_silver: #777777;

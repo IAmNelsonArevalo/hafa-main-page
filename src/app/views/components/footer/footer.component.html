@@ -1,0 +1,233 @@
+<footer>
+    <!-- Footer Top -->
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col1 col-md-4 col-sm-6 col-xs-12 col-footer">
+                    <div class="footer-title"><h5>About Mirora</h5></div>
+                    <div class="footer-content">
+                        <ul class="footer-contact">
+                            <li *ngFor="let address of getAddressData()">
+                                {{ address }}
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="follow">
+                        <label>Follow us</label>
+                        <ul class="link-follow">
+                            <li
+                                class="first"
+                                *ngFor="let social of socialNetworks()"
+                            >
+                                <a
+                                    class="{{ getIcon(social.name) }}"
+                                    title="{{ social.name }}"
+                                    href="{{ social.url }}"
+                                >
+                                    <span>{{ social.name }}</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col2 col-md-2 col-sm-6 col-xs-12 col-footer">
+                    <div class="footer-title"><h5>Information</h5></div>
+                    <div class="footer-content">
+                        <ul class="list-unstyled text-content">
+                            <li>
+                                <a
+                                    href="http://demo.towerthemes.com/tt_mirora/index.php?route=information/information&amp;information_id=4"
+                                    >About Us</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="http://demo.towerthemes.com/tt_mirora/index.php?route=information/information&amp;information_id=6"
+                                    >Delivery Information</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="http://demo.towerthemes.com/tt_mirora/index.php?route=information/information&amp;information_id=3"
+                                    >Privacy Policy</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="http://demo.towerthemes.com/tt_mirora/index.php?route=information/information&amp;information_id=5"
+                                    >Terms &amp; Conditions</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="http://demo.towerthemes.com/tt_mirora/index.php?route=account/voucher"
+                                    >Gift Certificates</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="http://demo.towerthemes.com/tt_mirora/index.php?route=information/contact"
+                                    >Contact Us</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col3 col-md-2 col-sm-6 col-xs-12 col-footer">
+                    <div class="footer-title"><h5>Extras</h5></div>
+                    <div class="footer-content">
+                        <ul class="list-unstyled text-content">
+                            <li>
+                                <a
+                                    href="http://demo.towerthemes.com/tt_mirora/index.php?route=product/manufacturer"
+                                    >Brands</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="http://demo.towerthemes.com/tt_mirora/index.php?route=account/voucher"
+                                    >Gift Certificates</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="http://demo.towerthemes.com/tt_mirora/index.php?route=affiliate/login"
+                                    >Affiliate</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="http://demo.towerthemes.com/tt_mirora/index.php?route=product/special"
+                                    >Specials</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="http://demo.towerthemes.com/tt_mirora/index.php?route=account/account"
+                                    >My Account</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="http://demo.towerthemes.com/tt_mirora/index.php?route=account/return/add"
+                                    >Returns</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col4 col-md-4 col-sm-6 col-xs-12 col-footer">
+                    <div
+                        class="tt_product_module multi-rows module-footer"
+                        id="product_module3"
+                    >
+                        <div class="module-title">
+                            <h2>Custom Products</h2>
+                        </div>
+
+                        <owl-carousel-o [options]="owlOptions">
+                            <ng-template
+                                carouselSlide
+                                [id]="product.id.toString()"
+                                *ngFor="let product of getProducts()"
+                            >
+                                <div class="product-layout list-style">
+                                    <div class="product-thumb transition">
+                                        <div class="item">
+                                            <div class="item-inner">
+                                                <div
+                                                    class="image images-container"
+                                                >
+                                                    <a
+                                                        href=""
+                                                        class="product-image"
+                                                    >
+                                                        <img
+                                                            src="http://demo.towerthemes.com/tt_mirora/image/cache/catalog/products/Watches/10-450x450.jpg"
+                                                            alt=""
+                                                            class="img-responsive"
+                                                        />
+                                                    </a>
+                                                </div>
+                                                <div class="caption">
+                                                    <div class="ratings">
+                                                        <star-rating
+                                                            [starType]="'svg'"
+                                                            [rating]="3"
+                                                        ></star-rating>
+                                                    </div>
+                                                    <h4 class="product-name">
+                                                        <a
+                                                            href="http://demo.towerthemes.com/tt_mirora/index.php?route=product/product&product_id=56"
+                                                            >Acer Aspire AIO</a
+                                                        >
+                                                    </h4>
+                                                    <div class="price-box">
+                                                        <div
+                                                            class="special-price"
+                                                        >
+                                                            <div class="price">
+                                                                $8.600
+                                                            </div>
+                                                        </div>
+                                                        <div class="old-price">
+                                                            <div class="price">
+                                                                $9.200
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ng-template>
+                        </owl-carousel-o>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Middle -->
+    <div class="footer-middle">
+        <div class="container">
+            <div class="container-inner">
+                <ul class="footer-custom-link">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Online Store</a></li>
+                    <li><a href="#">Promotion</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms Of Use</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="container-inner">
+                <div class="footer-copyright">
+                    <p>
+                        Copyright © 2022
+                        <a href="http://www.plazathemes.com">PlazaThemes</a
+                        >.<span>All Right Reserved.</span>
+                    </p>
+                </div>
+                <div class="payment">
+                    <img
+                        src="http://demo.towerthemes.com/tt_mirora/image/catalog/cmsblock/payment.png"
+                        alt="payment"
+                    />
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

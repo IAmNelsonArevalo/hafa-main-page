@@ -1,0 +1,13 @@
+<div class="breadcrumbs">
+    <div class="container">
+        <ul class="breadcrumb">
+            <li *ngFor="let breadcrumb of breadcrumbs">
+                <a
+                    href="{{ breadcrumb.path }}"
+                >
+                  {{ breadcrumb.name }}
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>

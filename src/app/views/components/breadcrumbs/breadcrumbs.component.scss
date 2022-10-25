@@ -1,0 +1,50 @@
+@import "../../../../assets/scss/variables";
+
+.breadcrumbs {
+    display: block;
+    text-align: center;
+    line-height: 25px;
+    overflow: hidden;
+    padding: 10px 0;
+    margin: 60px 0;
+
+    .container {
+        display: flex;
+        justify-content: center;
+
+        .breadcrumb {
+            margin: 0;
+            background: none !important;
+            text-transform: capitalize;
+            padding: 0;
+            list-style: none;
+            border-radius: 4px;
+
+            li {
+                display: inline-block;
+                margin: 0 4px 0 2px;
+
+                a {
+                    font-size: 14px;
+                    color: $sonic_silver;
+                }
+
+                &:last-child {
+                    &::before {
+                        content: "/";
+                    }
+
+                    a {
+                        color: $bistre_brown;
+                    }
+                }
+
+                &:not(:first-child) {
+                    &::before {
+                        content: "/";
+                    }
+                }
+            }
+        }
+    }
+}

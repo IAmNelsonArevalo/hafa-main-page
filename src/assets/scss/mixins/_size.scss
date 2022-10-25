@@ -1,0 +1,23 @@
+@mixin widthMixin($value, $isImportant) {
+  @if($isImportant) {
+    width: $value !important;
+  } @else {
+    width: $value !important;
+  }
+}
+
+@mixin heightMixin($value, $isImportant) {
+  @if($isImportant) {
+    height: $value !important;
+  } @else {
+    height: $value !important;
+  }
+}
+
+@mixin fontSizeMixin($value, $isImportant) {
+  @if($isImportant) {
+    font-size: $value !important;
+  } @else {
+    font-size: $value !important;
+  }
+}

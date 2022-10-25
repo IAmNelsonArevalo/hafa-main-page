@@ -1,0 +1,89 @@
+@import "../../../../assets/scss/variables";
+
+#top {
+    border-bottom: 1px solid $raisin_black;
+
+    .follow {
+        float: left;
+        margin-right: 20px;
+        float: left;
+        margin-right: 20px;
+
+        label {
+            display: none;
+        }
+
+        .link-follow {
+            margin: 0;
+            padding-bottom: 7px;
+            display: inline-block;
+            vertical-align: top;
+            overflow: hidden;
+
+            li {
+                margin-top: 7px;
+                margin-right: 5px;
+                float: left;
+
+                a {
+                    width: 30px;
+                    height: 30px;
+                    line-height: 30px;
+                    text-align: center;
+                    z-index: 1;
+                    -webkit-transition: all 0.5s ease-in-out;
+                    -moz-transition: all 0.5s ease-in-out;
+                    -ms-transition: all 0.5s ease-in-out;
+                    -o-transition: all 0.5s ease-in-out;
+                    transition: all 0.5s ease-in-out;
+                    padding: 0;
+                    position: relative;
+                    display: inline-block;
+                    vertical-align: middle;
+                    color: #616161;
+                    background: #2f2f2f;
+                    border-radius: 100%;
+                    font-size: 0;
+
+                    &::before {
+                      font-size: 14px;
+                    }
+
+                    &:hover {
+                      color: $white;
+                    }
+
+                    span {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    .box-left {
+      float: left;
+      margin: 0;
+      list-style: none;
+      padding: 0;
+    }
+
+    @media (max-width: 1199px) {
+        text-align: center;
+
+        .follow, .box-left {
+            float: none;
+            display: inline-block;
+            vertical-align: top;
+            margin: 0;
+        }
+    }
+
+    @media (max-width: 991px) {
+        .follow, .box-left {
+            display: block;
+            margin: 0;
+            border-bottom: 1px solid $charleston_green;
+        }
+    }
+}

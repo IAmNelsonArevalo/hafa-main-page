@@ -3,14 +3,17 @@ import { CommonModule } from '@angular/common';
 /** Components */
 import {LoginComponent} from "./login/login.component";
 import { ComponentsModule } from '../components/components.module';
+import { ProductCardComponent } from './product-card/product-card.component';
 
 
 @NgModule({
   exports: [
-    LoginComponent
+    LoginComponent,
+    ProductCardComponent
   ],
   declarations: [
     LoginComponent,
+    ProductCardComponent,
   ],
   imports: [
     CommonModule,

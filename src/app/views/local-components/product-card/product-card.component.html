@@ -1,0 +1,112 @@
+<div
+    class="product-layout product-grid module-style1 col-lg-3 col-md-3 col-sm-6 col-xs-6 product-item"
+>
+    <div class="product-thumb">
+        <div class="item item2">
+            <div class="item-inner">
+                <div class="image images-container">
+                    <div class="label-product label_sale">-8%</div>
+                    <div class="image rotate-image-container">
+                        <a
+                            href="http://demo.towerthemes.com/tt_mirora/index.php?route=product/product&amp;product_id=52"
+                        >
+                            <img
+                                src="http://demo.towerthemes.com/tt_mirora/image/cache/catalog/products/Watches/12-600x600.jpg"
+                                alt="Acer Aspire VX 15"
+                                title="Acer Aspire VX 15"
+                                class="img-responsive img-default-image"
+                            />
+                        </a>
+                    </div>
+                </div>
+                <div class="caption">
+                    <p class="manufacture-product">
+                        <span>Brands </span
+                        ><a
+                            href="http://demo.towerthemes.com/tt_mirora/index.php?route=product/manufacturer/info&amp;manufacturer_id=7"
+                            >Hewlett-Packard</a
+                        >
+                    </p>
+
+                    <p class="product-tags">
+                        <a
+                            href="http://demo.towerthemes.com/tt_mirora/index.php?route=product/search&amp;tag=Sport"
+                            >Sport</a
+                        >,
+                        <a
+                            href="http://demo.towerthemes.com/tt_mirora/index.php?route=product/search&amp;tag=Luxury"
+                            >Luxury</a
+                        >
+                        <a href=""></a>
+                    </p>
+                    <h4 class="product-name">
+                        <a
+                            href="http://demo.towerthemes.com/tt_mirora/index.php?route=product/product&amp;product_id=52"
+                            >Acer Aspire VX 15</a
+                        >
+                    </h4>
+
+                    <div class="price-box">
+                        <p class="special-price">
+                            <span class="price">$68.00</span>
+                        </p>
+                        <p class="old-price">
+                            <span class="price">$74.00</span>
+                        </p>
+                        <p class="price-tax">
+                            <span class="price">Ex Tax: $55.00</span>
+                        </p>
+                    </div>
+                    <div class="box-hover">
+                        <p class="product-des">
+                            Stop your co-workers in their tracks with the
+                            stunning new 30-inch diagonal HP LP3065 Flat Panel
+                            Mon..
+                        </p>
+                        <div class="button-group action-links">
+                            <button
+                                type="button"
+                                class="button btn-cart"
+                                title="Add to Cart"
+                                onclick="cart.add('52', '1');"
+                            >
+                                <span>Add to Cart</span>
+                            </button>
+                            <button
+                                type="button"
+                                class="button btn-wishlist"
+                                title="Add to Wish List"
+                                onclick="wishlist.add('52');"
+                            >
+                                <span>Add to Wish List</span>
+                            </button>
+
+                            <button
+                                type="button"
+                                class="button btn-compare"
+                                title="Compare this Product"
+                                onclick="compare.add('52');"
+                            >
+                                <span>Compare this Product</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".product-list .item2  .price-box").prependTo(
+                $(".product-list .item2 .action-links")
+            );
+            $(".btn-grid").click(function () {
+                $(".item2  .price-box").appendTo($(".item2 .caption"));
+                $(".item2  .box-hover").appendTo($(".item2 .caption"));
+            });
+            $(".btn-list").click(function () {
+                $(".item2  .price-box").prependTo($(".item2 .action-links"));
+            });
+        });
+    </script>
+</div>
